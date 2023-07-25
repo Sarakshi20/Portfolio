@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="container-1">
+                <a class="one" href="#">Sarakshi Sara</a>
+                <a class="two" href="#">Sarakshi Sara</a>
+            </div>
+            <div class="container-2">
+                <div><a href="#proj">Projects</a></div>
+                <div><a href="#about">About</a></div>
+                <div><a href="#connect">Contact</a></div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="image">
+            <img src="https://media3.giphy.com/media/k0ijJhqrUP4T2EvmJ1/giphy.gif?cid=ecf05e473zy8lllfx68ddpln2u31aoujothfsfey5uk97a6q&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="cat using laptop">
+        </div>
+        <div id="content">
+            <h1>Welcome to the world of infinite possibilities!</h1>
+            <p> I am Sarakshi, but you can call me Sara - a passionate explorer on a relentless quest to master the art of coding and bring innovative visions to life.</p>
+            <div class="cursor"></div>
+        </div>
+    </section>
+    <h2 id="proj">Projects</h2>
+    <article>
+        <div class="medium"><a href="#">The Simon Game</a></div>
+        <div class="medium-1">The Simon game is the exciting electronic game of lights and sounds in which players must repeat random sequences of lights by pressing the colored pads in the correct order.</div>
+        <div class="big"><img src="Simon.png" alt="Simon game image"></div>
+    </article>
+    <article>
+        <div class="medium"><a href="#">The Dice Game</a></div>
+        <div class="medium-1">The Dice Game is based on a two-player. Both players roll the dice and the player who gets the highest phase value will win the game.</div>
+        <div class="big"><img src="Dice.png" alt="Dice Game image"></div>
+    </article>
+    <article>
+        <div class="medium"><a href="#">Analog Clock</a></div>
+        <div class="medium-1">A simple real-time analog clock.</div>
+        <div class="big"><img src="Clock.png" alt="Analog Clock image"></div>
+    </article>
+    <article>
+        <div class="medium"><a href="#">Calculator</a></div>
+        <div class="medium-1">A calculator for performing basic mathematical operations.</div>
+        <div class="big"><img src="Calculator.png" alt="Calculator image"></div>
+    </article>
+
+    <h2 id="about">About Me</h2>
+    <footer>
+        <div>
+            <p>
+                Hello! I'm Sarakshi Kaur, a web development enthusiast and a third-year student at Chitkara University. <br>
+                I'm a passionate learner who is deeply intrigued by the world of web development. As a student studying at Chitkara University, I have embraced the challenge of mastering the art of coding and creating captivating digital experiences. <br>
+                My web development journey began with a spark of curiosity that soon ignited into a blazing passion. From the basics of HTML and CSS to exploring the intricacies of JavaScript, I've been on a thrilling quest to expand my skill set and knowledge.
+                My vision is to become a skilled web developer who can make a positive impact on the digital landscape. I aspire to create user-friendly and innovative websites that leave a lasting impression on visitors. <br>
+                😃✊🏼
+            </p>
+        </div>
+    </footer>
+    <h2 id="connect">Let's Connect 🥹</h2>
+    <footer>
+        <div>
+            <p>
+                I'm eager to connect with fellow web development enthusiasts, students, and industry professionals. If you share the same passion or are interested in collaboration, feel free to reach out!
+            </p>
+            <form>
+                <input type="text" placeholder="Name*" id="name" required>
+                <input type="email" placeholder="E-Mail*" id="email" required>
+                <input type="text" placeholder="Subject" id="Subject">
+                <input type="text" placeholder="Message" id="Message">
+                <button>SEND</button>
+            </form>
+        </div>
+    </footer>
+    <script>
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove",function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        })
+    </script>
+</body>
+</html>
